@@ -10,19 +10,19 @@ ps4sql
   
   
 ## Non-Regular task list##
-  1 Data cleansing
-       a. delete duplicate sales, leads, orders record;
-       b. delete duplicate account, contact recrod;
+  1. Data cleansing
+      - delete duplicate sales, leads, orders record;
+      - delete duplicate account, contact recrod;
   2. Data update
-       a. update the latest sale, order data from the sales team;
-       b. update the latest contact detail from the customer service team;
+      - update the latest sale, order data from the sales team;
+      - update the latest contact detail from the customer service team;
   3. Data report ( I believe most systems have weekly / monthly report 
     function, but your GM or marketing team or sale team lead want to
     check the UTD data, and want to get the report from you ASAP )
-        a.generate the report for GM;
-        b.generate the report for Marketing;
-        c.generate the report for sales team leader;
-        d.generate the report for customer service team;
+      - generate the report for GM;
+      - generate the report for Marketing;
+      - generate the report for sales team leader;
+      - generate the report for customer service team;
         
  
 ##Directory structure
