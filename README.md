@@ -9,7 +9,7 @@ ps4sql
   is supposed to run on the machine which has SQL server locally.
   
   
-## Non-Regular task list ##
+## Non-Regular task list##
   1 Data cleansing
        a. delete duplicate sales, leads, orders record;
        b. delete duplicate account, contact recrod;
@@ -25,7 +25,7 @@ ps4sql
         d.generate the report for customer service team;
         
  
-##Directory structure ##     
+##Directory structure
       Root (PS4SQL)                    
         |__ backup :      A folder  contains database  backup files
         |__ log:          A folder contains log files               
