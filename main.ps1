@@ -394,6 +394,8 @@ Please type your option here "
               "H" { $cmd=commandHandler "Restore-Backup-DataCleansing" }
               "C" { $cmd=commandHandler  "DataCleansing-Only"  }
               "B" { $cmd=commandHandler  "Backup-Only"  }
+              "S" { $cmd=commandHandler  "DataCleansing-Only"  }
+              "M" { $cmd=commandHandler  "Backup-Only"  }              
               "R" { $cmd=commandHandler  "Restore-Only"  } 
           }
 		  
