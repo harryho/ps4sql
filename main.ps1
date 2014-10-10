@@ -410,14 +410,13 @@ Please type your option here "
      }  
   }
    catch
-  {
- 
-    Write-Host "Caught an exception:" -Backgroundcolor Red –Foregroundcolor White  Red
-    log "Caught an exception:"         
-    Write-Host "Exception Type: $($_.Exception.GetType().FullName)" -Backgroundcolor Red –Foregroundcolor White
-    log "Exception Type: $($_.Exception.GetType().FullName)"
-    Write-Host "Exception Message: $($_.Exception.Message)" -Backgroundcolor Red –Foregroundcolor White 
-    log "Exception Message: $($_.Exception.Message)"    
+  { 
+      Write-Host "Caught an exception:" -Backgroundcolor Red –Foregroundcolor White  Red
+      log "Caught an exception:"         
+      Write-Host "Exception Type: $($_.Exception.GetType().FullName)" -Backgroundcolor Red –Foregroundcolor White
+      log "Exception Type: $($_.Exception.GetType().FullName)"
+      Write-Host "Exception Message: $($_.Exception.Message)" -Backgroundcolor Red –Foregroundcolor White 
+      log "Exception Message: $($_.Exception.Message)"    
   }
   
 }
