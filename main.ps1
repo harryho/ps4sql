@@ -419,13 +419,10 @@ Please type your option here "
     Write-Host "Exception Message: $($_.Exception.Message)" -Backgroundcolor Red –Foregroundcolor White 
     log "Exception Message: $($_.Exception.Message)"    
   }
-  finally
-  { 
-     log "Finally block reached. The whole process took $measure . Exit." 
-     Write-Host "Finally block reached. The whole process took $measure . Exit."	    
-        deinit    
-  }
   
 }
 
 main
+log "Finally block reached. The whole process took $measure . Exit." 
+     Write-Host "Finally block reached. The whole process took $measure . Exit."      
+deinit  
