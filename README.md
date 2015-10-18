@@ -35,3 +35,8 @@ ps4sql
         |__ update:       A folder contains the csv files for data update
         |__ main.ps1 :    A powershell file called by main.ps1     
         |__ worker.ps1 :  A powershell file executed by user        
+
+
+Main program snapshot
+
+![main snapshot](https://github.com/harryho/ps4sql/blob/master/snapshot/ps4sql_main.PNG)
