@@ -218,6 +218,9 @@ $ps4sql_script1="$ps4sql_pwd\$ps4sql_importPs"
 #****    Main Program    **** 
 #***-------------------***
 
+function log($msg) {
+    $msg | Add-Content $ps4sql_logFileFullPath
+}
 
 function init
 {
@@ -290,7 +293,7 @@ function LoadSnapIn
         else 
         { 
             $logInfo= "SqlServerProviderSnapin100 is not registered with the system."
-            Write-Host $logInfo -Backgroundcolor Red �Foregroundcolor White 
+            Write-Host $logInfo -Backgroundcolor Red -Foregroundcolor White 
             log $logInfo
             break 
         } 
@@ -313,7 +316,7 @@ function LoadSnapIn
 		else 
 		{ 
 			$logInfo= "SqlServerCmdletSnapin100 is not registered with the system." 
-            Write-Host $logInfo -Backgroundcolor Red �Foregroundcolor White
+            Write-Host $logInfo -Backgroundcolor Red -Foregroundcolor White
             log  $logInfo 
 			break 
 		} 
@@ -411,11 +414,11 @@ Please type your option here "
   }
    catch
   { 
-      Write-Host "Caught an exception:" -Backgroundcolor Red –Foregroundcolor White  Red
+      Write-Host "Caught an exception:" -Backgroundcolor Red -Foregroundcolor White  Red
       log "Caught an exception:"         
-      Write-Host "Exception Type: $($_.Exception.GetType().FullName)" -Backgroundcolor Red –Foregroundcolor White
+      Write-Host "Exception Type: $($_.Exception.GetType().FullName)" -Backgroundcolor Red -Foregroundcolor White
       log "Exception Type: $($_.Exception.GetType().FullName)"
-      Write-Host "Exception Message: $($_.Exception.Message)" -Backgroundcolor Red –Foregroundcolor White 
+      Write-Host "Exception Message: $($_.Exception.Message)" -Backgroundcolor Red -Foregroundcolor White 
       log "Exception Message: $($_.Exception.Message)"    
   }
   
@@ -423,5 +426,6 @@ Please type your option here "
 
 main
 log "Finally block reached. The whole process took $measure . Exit." 
-     Write-Host "Finally block reached. The whole process took $measure . Exit."      
+Write-Host "Finally block reached. The whole process took $measure . Exit."      
+
 deinit  
